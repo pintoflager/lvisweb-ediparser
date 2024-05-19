@@ -1,0 +1,156 @@
+vat_percent = 24.0
+lang_codes = ["fin", "swe", "eng"]
+
+[import]
+json = false
+sqlite = true
+
+[[seller]]
+id = "003718191538"
+name = "Ahlsell Oy"
+lv = [
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/altuote.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/ALTUOTE.zip"
+    ],
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/alahinta.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/ALAHINTA.zip"
+    ]
+]
+iv = [
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/aituote.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/AITUOTE.zip"
+    ],
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/aiahinta.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/AIAHINTA.zip"
+    ]
+]
+sa = [
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/astuote.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/ASTUOTE.zip"
+    ],
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/asahinta.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/ASAHINTA.zip"
+    ]
+]
+te = [
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/aptuote.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/APTUOTE.zip"
+    ],
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/apahinta.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/APAHINTA.zip"
+    ]
+]
+ky = [
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/aktuote.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/AKTUOTE.zip"
+    ],
+    [
+        "https://www.ahlsell.fi/globalassets/ahlsell_fi/dokumentit/ovt-hinnastot_/akahinta.zip",
+        "https://hinnastot.lvisnet.fi/ahlsell/AKAHINTA.zip"
+    ]
+]
+
+[[seller]]
+id = "003709924664"
+name = "Dahl Oy"
+lv = [
+    [
+        "https://www.dahl.fi/fileadmin/user_upload/hinnastot/koko_rekisteri/tuotteet/dltuote.zip",
+        "https://hinnastot.lvisnet.fi/dahl/DLTUOTE.zip"
+    ],
+    [
+        "https://www.dahl.fi/fileadmin/user_upload/hinnastot/koko_rekisteri/hinnat/dlhinta.zip",
+        "https://hinnastot.lvisnet.fi/dahl/DLHINTA.zip"
+    ]
+]
+iv = [
+    [
+        "https://www.dahl.fi/fileadmin/user_upload/hinnastot/koko_rekisteri/tuotteet/dituote.zip",
+        "https://hinnastot.lvisnet.fi/dahl/DITUOTE.zip"
+    ],
+    [
+        "https://www.dahl.fi/fileadmin/user_upload/hinnastot/koko_rekisteri/hinnat/dihinta.zip",
+        "https://hinnastot.lvisnet.fi/dahl/DIHINTA.zip"
+    ]
+]
+
+[[seller]]
+id = "003710712079"
+name = "Onninen Oy"
+lv = [
+    [
+        "https://public-pricelists.onninen.fi/gross/latest/OLTUOTE.zip",
+        "https://hinnastot.lvisnet.fi/onninen/OLTUOTE.zip"
+    ],
+    [
+        "https://public-pricelists.onninen.fi/gross/latest/OLAHINTA.zip",
+        "https://hinnastot.lvisnet.fi/onninen/OLAHINTA.zip"
+    ]
+]
+iv = [
+    [
+        "https://public-pricelists.onninen.fi/gross/latest/OITUOTE.zip",
+        "https://hinnastot.lvisnet.fi/onninen/OITUOTE.zip"
+    ],
+    [
+        "https://public-pricelists.onninen.fi/gross/latest/OIAHINTA.zip",
+        "https://hinnastot.lvisnet.fi/onninen/OIAHINTA.zip"
+    ]
+]
+sa = [
+    [
+        "https://public-pricelists.onninen.fi/gross/latest/OSTUOTE.zip",
+        "https://hinnastot.lvisnet.fi/onninen/OSTUOTE.zip"
+    ],
+    [
+        "https://public-pricelists.onninen.fi/gross/latest/OSAHINTA.zip",
+        "https://hinnastot.lvisnet.fi/onninen/OSAHINTA.zip"
+    ]
+]
+ky = [
+    [
+        "https://public-pricelists.onninen.fi/gross/latest/OKTUOTE.zip",
+        "https://hinnastot.lvisnet.fi/onninen/OKTUOTE.zip"
+    ],
+    [
+        "https://public-pricelists.onninen.fi/gross/latest/OKAHINTA.zip",
+        "https://hinnastot.lvisnet.fi/onninen/OKAHINTA.zip"
+    ]
+]
+
+[[seller]]
+id = "003709809949"
+name = "Rexel (Elektroskandia Oy)"
+sa = [
+    [
+        "https://www.rexel.fi/medias/sys_master/root/h22/h22/222/TUOTTEET.zip",
+        "https://hinnastot.lvisnet.fi/rexel/ETUOTE.zip"
+    ],
+    [
+        "https://www.rexel.fi/medias/sys_master/root/h11/h11/111/EHINNAT.zip",
+        "https://hinnastot.lvisnet.fi/rexel/EHINTA.zip"
+    ]
+]
+
+[[seller]]
+id = "003702137852"
+name = "SLO (Sonepar Oy)"
+sa = [
+    [
+        "https://www.slo.fi/sloattachments/ovt/tpo{mmyy}y.zip",
+        "https://hinnastot.lvisnet.fi/slo/STUOTE.zip"
+    ],
+    [
+        "https://www.slo.fi/sloattachments/ovt/hpo{mmyy}y.zip",
+        "https://hinnastot.lvisnet.fi/slo/STUOTE.zip"
+    ]
+]
