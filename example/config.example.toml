@@ -4,6 +4,7 @@ lang_codes = ["fin", "swe", "eng"]
 [import]
 json = false
 sqlite = true
+search = true
 
 [[seller]]
 id = "003718191538"

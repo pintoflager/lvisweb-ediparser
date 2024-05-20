@@ -139,7 +139,7 @@ fn main() {
     }
 
     // Build search indexes for each product group
-    if build_search_index {
+    if config.import.search && build_search_index {
         debug!("Building search indexes...");
 
         if let Err(e) = search_index_builder(&config, &mut db_sellers) {

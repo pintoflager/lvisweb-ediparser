@@ -24,6 +24,7 @@ pub struct Seller {
 pub struct ImportTargets {
     pub json: bool,
     pub sqlite: bool,
+    pub search: bool,
 }
 
 #[derive(Debug, Clone, Deserialize)]
@@ -96,6 +97,10 @@ impl Config {
         let mut config = toml::from_str::<Self>(&s).map_err(|e|
             anyhow!("Unable to read config file as toml: {}", e)
         )?;
+
+        if config.import.search && !config.import.sqlite {
+            bail!("Search index importing requires sqlite import to be enabled.")
+        }
 
         config.dir = dir;
 

@@ -16,7 +16,7 @@ pub struct DbProductSearch {
 }
 
 pub fn search_index_builder(conf: &Config, db_conn: &mut Connection) -> Result<()> {
-    // Get sellers still active on the config
+    // Get sellers who are still active on the config
     let active_sellers = conf.seller.iter()
         .map(|c| (c.id.to_owned(), c.name.to_owned()))
         .collect::<HashMap<String, String>>();

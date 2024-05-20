@@ -81,26 +81,28 @@ pub fn init(config: &Config) -> Result<(Connection, Connection)> {
         )?;
 
         // Create full-text search index table to DB
-        let result = sellers.execute(
-            &format!("create virtual table search_{k} using fts5 (
-                lang UNINDEXED,
-                seller_id UNINDEXED,
-                product_id,
-                body,
-                tokenize='trigram'
-            )"),
-            [],
-        );
+        if config.import.search {
+            let result = sellers.execute(
+                &format!("create virtual table search_{k} using fts5 (
+                    lang UNINDEXED,
+                    seller_id UNINDEXED,
+                    product_id,
+                    body,
+                    tokenize='trigram'
+                )"),
+                [],
+            );
 
-        // Virtual table doesn't have 'if not exists' untill newer versions of sqlite
-        // so if this fails lets just presume it was a duplicate error (^^)
-        if let Err(e) = result {
-            match e.sqlite_error() {
-                Some(c) => warn!("Create DB search table for {} \
-                    failed with error code ({}), most likely table already exists.",
-                    v, c.extended_code),
-                None => warn!("Create DB search table failed without \
-                    error code. How strange is that...")
+            // Virtual table doesn't have 'if not exists' untill newer versions of sqlite
+            // so if this fails lets just presume it was a duplicate error (^^)
+            if let Err(e) = result {
+                match e.sqlite_error() {
+                    Some(c) => warn!("Create DB search table for {} \
+                        failed with error code ({}), most likely table already exists.",
+                        v, c.extended_code),
+                    None => warn!("Create DB search table failed without \
+                        error code. How strange is that...")
+                }
             }
         }
 
